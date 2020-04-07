@@ -25,6 +25,8 @@
 - has_many :likes
 
 ##likesテーブル
+|Column|Type|Options|
+|------|----|-------|
 |user_id|references|null: false, foreign_key: true|
 |shop_id|references|null: false, foreign_key: true|
 ## Association
