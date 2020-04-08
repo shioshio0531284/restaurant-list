@@ -20,7 +20,7 @@
 |phone_number|integer|null: false, unique: true|
 |price|integer|null: false|
 |body|text|-------| #body:お店に対するコメントなど
-## Association
+### Association
 - belongs_to :user
 - has_many :likes
 
@@ -29,6 +29,6 @@
 |------|----|-------|
 |user_id|references|null: false, foreign_key: true|
 |shop_id|references|null: false, foreign_key: true|
-## Association
+### Association
 - belonges_to :user
 - belonges_to :shop
