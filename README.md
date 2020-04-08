@@ -2,7 +2,7 @@
 
 # DB設計
 
-##usersテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |nickname|staring|null: false, unique: true|
@@ -12,7 +12,7 @@
 - has_many :shops
 - has_many :likes
 
-##shopsテーブル
+## shopsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|staring|null: false|
@@ -24,7 +24,7 @@
 - belongs_to :user
 - has_many :likes
 
-##likesテーブル
+## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|references|null: false, foreign_key: true|
