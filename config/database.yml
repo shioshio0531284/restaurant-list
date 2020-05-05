@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: restaurant-list_production
-  username: restaurant-list
-  password: <%= ENV['RESTAURANT-LIST_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
